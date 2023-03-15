@@ -1,0 +1,340 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --maxWidthContent: 1200px;
+    --primaryColor: #343746;
+    --secondaryColor: #D56319;
+    --linkColor: #D40000;
+    --brightColor: #ffffff;
+    --darkColor: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 2.5rem 0 1rem 0;
+    color: var(--primaryColor);
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--primaryColor);
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.4rem;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: var(--brightColor);
+    background-color: var(--primaryColor);
+    background-image: url("../images/fire_border.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+#nav__fixed {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0;
+    color: var(--brightColor);
+    background-color: var(--primaryColor);
+    box-shadow: 0px 10px 15px var(--darkColor);
+    --mo
+    z-index: 2;
+}
+
+#nav__fixed .content {
+    align-items: center;
+    padding: 0;
+}
+
+#logo__fixed img {
+    width: 70px;
+}
+
+#menu__header__fixed ul {
+    display: flex;
+}
+
+#menu__header__fixed a {
+    padding: 1rem;
+    color: var(--brightColor);
+}
+
+#menu__header__fixed a:hover {
+    padding: 1rem;
+    color: var(--brightColor);
+    background-color: var(--linkColor);
+    border-radius: 10px;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem;
+    text-align: center;
+}
+
+#logo img {
+    width: 300px;
+    margin: 2rem 0;
+}
+
+#menu__header {
+    width: 100%;
+    display: flex;
+}
+
+#menu__header ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#menu__header a {
+    color: var(--brightColor);
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+#menu__header a:hover {
+    background-color: var(--linkColor);
+    border-radius: 10px;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.content {
+    width: 100%;
+    max-width: var(--maxWidthContent);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.left,
+.right {
+    width: 48%;
+}
+
+.card {
+    width: 27%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--brightColor);
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--primaryColor);
+}
+
+.card img {
+    width: 40%;
+    margin-right: 1rem;
+    float: left;
+}
+
+.card h3 {
+    margin-bottom: 10px;;
+    padding: 0.5rem 0;
+    color: var(--secondaryColor);
+    font-size: 1.4rem;
+}
+
+.card h4 {
+    margin-right: 5px;
+    padding: 0;
+    text-align: left;
+    float: left;
+}
+
+#bebidas,
+#porcoes,
+#hamburguers,
+#massas,
+#sobremesas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sobre .content,
+#espaco .content {
+    display: flex;
+    align-items: center;
+}
+
+#sobre .left {
+    width: 30%;
+}
+
+#sobre .right {
+    width: 70%;
+}
+
+#sobre p {
+    margin: 2rem 0;
+}
+
+#sobre .left img {
+    width: 90%;
+    margin: 2rem auto 1rem auto;
+}
+
+#sobre img,
+#espaco img {
+    width: 100%;
+}
+
+#espaco img {
+    margin-top: 20px;
+    box-shadow: 15px -20px var(--primaryColor);
+}
+
+#contato .left {
+    margin-top: 3rem;
+}
+
+#contato h3 {
+    margin: 2rem 0 1rem;
+}
+
+#contato img {
+    width: 100%;
+}
+
+#contato img:hover {
+    opacity: 0.7;
+    background-color: var(--primaryColor);
+}
+
+#contato span {
+    font-size: 1rem;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--brightColor);
+    background-color: var(--primaryColor);
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: var(--linkColor);
+}
+
+footer a:hover {
+    color: var(--secondaryColor);
+}
+
+#logo__footer {
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+}
+
+#logo__footer img {
+    width: 20%;
+}
+
+#endereco {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+#sociais {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+#sociais img {
+    width: 25px;
+}
+
+#copy {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+#credits {
+    width: 100%;
+    margin: 0.5rem 0 1rem 0;
+}
+
+form {
+    padding: 1rem;
+}
+
+form fieldset {
+    padding: 1rem;
+    border: 1px solid var(--primaryColor);
+    border-radius: 10px;
+}
+
+form legend {
+    padding: 0 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form input {
+    width: 100%;
+    margin: 0.5rem 0 1.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--primaryColor);
+    border-radius: 10px;
+}
+
+form textarea {
+    width: 100%;
+    height: 7rem;
+    margin: 0.5rem 0 1.5rem;
+    padding: 1rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    border: 1px solid var(--primaryColor);
+    border-radius: 10px;
+}
+
+form button {
+    padding: 1rem 2rem;
+    color: var(--brightColor);
+    background-color: var(--primaryColor);
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--linkColor);
+}
