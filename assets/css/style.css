@@ -13,6 +13,7 @@
     --primaryColor: #343746;
     --secondaryColor: #D56319;
     --linkColor: #D40000;
+    --linkColorTwo: #ff6666;
     --brightColor: #ffffff;
     --darkColor: #000000;
 }
@@ -36,6 +37,7 @@ h2 {
 }
 
 body {
+    max-width: 100%;
     font-family: sans-serif;
     font-size: 1.4rem;
 }
@@ -63,13 +65,12 @@ header {
     color: var(--brightColor);
     background-color: var(--primaryColor);
     box-shadow: 0px 10px 15px var(--darkColor);
-    --mo
     z-index: 2;
 }
 
 #nav__fixed .content {
     align-items: center;
-    padding: 0;
+    padding: 0 1rem;
 }
 
 #logo__fixed img {
@@ -78,18 +79,68 @@ header {
 
 #menu__header__fixed ul {
     display: flex;
+    text-transform: uppercase;
 }
 
 #menu__header__fixed a {
     padding: 1rem;
     color: var(--brightColor);
+    border-left: 3px solid transparent;
+    border-top: 9px solid transparent;
+    border-right: 3px solid transparent;
 }
 
 #menu__header__fixed a:hover {
-    padding: 1rem;
+    color: var(--linkColorTwo);
+    border-left: 3px solid var(--linkColor);
+    border-top: 9px solid var(--linkColor);
+    border-right: 3px solid var(--linkColor);
+    border-radius: 25px;
+}
+
+#menu__header__fixed__mobile {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3rem 1rem;
+    background-color: var(--primaryColor);
+    font-size: 1.6rem;
+}
+
+#menu__header__fixed__mobile li {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--brightColor);
+}
+
+#menu__header__fixed__mobile li:last-child {
+    padding: 1rem 0;
+    border-bottom: 0;
+}
+
+#menu__header__fixed__mobile a {
+    display: block;
     color: var(--brightColor);
-    background-color: var(--linkColor);
-    border-radius: 10px;
+}
+
+#show__menu {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--brightColor);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#hide__menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--brightColor);
+    font-size: 40px;
+    cursor: pointer;
 }
 
 nav {
@@ -117,13 +168,19 @@ nav {
 
 #menu__header a {
     color: var(--brightColor);
-    padding: 1rem;
+    padding: 0.7rem 1rem;
     text-transform: uppercase;
+    border-left: 3px solid transparent;
+    border-top: 9px solid transparent;
+    border-right: 3px solid transparent;
 }
 
 #menu__header a:hover {
-    background-color: var(--linkColor);
-    border-radius: 10px;
+    color: var(--linkColorTwo);
+    border-left: 3px solid var(--linkColor);
+    border-top: 9px solid var(--linkColor);
+    border-right: 3px solid var(--linkColor);
+    border-radius: 25px;
 }
 
 section {
@@ -158,7 +215,10 @@ section {
 .card img {
     width: 40%;
     margin-right: 1rem;
+    padding: 0 10px 10px 0;
     float: left;
+    border-right: 2px solid var(--secondaryColor);
+    border-bottom: 2px solid var(--secondaryColor);
 }
 
 .card h3 {
@@ -233,6 +293,7 @@ section {
 #contato img:hover {
     opacity: 0.7;
     background-color: var(--primaryColor);
+    z-index: 1;
 }
 
 #contato span {
@@ -278,6 +339,7 @@ footer a:hover {
 
 #sociais img {
     width: 25px;
+    margin: 0 1rem;
 }
 
 #copy {
@@ -337,4 +399,61 @@ form button {
 
 form button:hover {
     background-color: var(--linkColor);
+}
+
+@media(max-width: 830px){
+
+    header {
+        display: none;
+    }
+
+    #menu__header__fixed {
+        display: none;
+    }
+
+    #logo__fixed {
+        margin: 0 auto;
+    }
+
+    #show__menu {
+        display: block;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    #espaco .right img {
+        margin-top: 4rem;
+    }
+
+    form {
+        margin-top: 4rem;
+    }
+}
+
+@media(max-width: 680px){
+
+    .content {
+        display: block;
+    }
+
+    .left,
+    .right,
+    .card {
+        width: 100%;
+    }
+
+    #sobre .left {
+        width: 100%;
+    }
+    
+    #sobre .right {
+        width: 100%;
+    }
+
+    #sobre .left img {
+        width: 100%;
+        margin: 2rem auto 1rem auto;
+    }
 }

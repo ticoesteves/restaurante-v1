@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <script src="./assets/js/scrollreveal.js"></script>
     <title>Big Grill - Uma delícia!</title>
 </head>
-<body>
+<body id="home">
     
     <nav id="nav__fixed">
         <div class="content">
@@ -26,10 +28,22 @@
                 </ul>
             </div>
         </div>
+        <label id="show__menu">&#9776;</label>
+        <div id="menu__header__fixed__mobile" class="animate__animated">
+                <label id="hide__menu">&#10006;</label>
+                <ul>
+                    <li><a onclick="hideMenu();" href="#home">Home</a></li>
+                    <li><a onclick="hideMenu();" href="#cardapio">Cardápio</a></li>
+                    <li><a onclick="hideMenu();" href="#sobre">Sobre Nós</a></li>
+                    <li><a onclick="hideMenu();" href="#espaco">Nosso Espaço</a></li>
+                    <li><a onclick="hideMenu();" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <header id="home">
+    <header>
         <nav>
-            <div id="logo">
+            <div id="logo" class="rotateScroll">
                 <a href="#home">
                     <img src="./assets/images/logo_big_grill_branco.png" alt="LOGO">
                 </a>
@@ -50,64 +64,64 @@
         <section id="cardapio">
             <div class="content">
                 <div id="bebidas">
-                    <h2>Bebidas</h2>
-                    <div class="card">
+                    <h2 class="rotateScroll">Bebidas</h2>
+                    <div class="card toDownScroll">
                         <img src="./assets/images/heineken.jpg" alt=""/>
                         <h3>Heineken</h3>
                         <h4>Preço:</h4> <span>R$6,50</span>
                         <br><br>
                         <h4>Tamanho:</h4> <span>330ml</span>
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                         <img src="./assets/images/stella.jpg" alt=""/>
                         <h3>Stella</h3>
                         <h4>Preço:</h4> <span>R$8,00</span>
                         <br><br>
                         <h4>Tamanho:</h4> <span>600ml</span>
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                         <img src="./assets/images/brahma.jpg" alt=""/>
                         <h3>Brahma</h3>
                         <h4>Preço:</h4> <span>R$4,00</span>
                         <br><br>
                         <h4>Tamanho:</h4> <span>330ml</span>
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                         <img src="./assets/images/chopp_claro.png" alt=""/>
                         <h3>Chopp Claro</h3>
                         <h4>Preço:</h4> <span>R$15,00</span>
                         <br><br>
                         <h4>Tamanho:</h4> <span>750ml</span>                        
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                         <img src="./assets/images/chopp_escuro.png" alt=""/>
                         <h3>Chopp Pielsen</h3>
                         <h4>Preço:</h4> <span>R$17,00</span>
                         <br><br>
                         <h4>Tamanho:</h4> <span>750ml</span>
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                         <img src="./assets/images/vinho_branco.png" alt=""/>
                         <h3>Vinho Branco Algairen</h3>
                         <h4>Preço:</h4> <span>R$129,00</span>
                         <br><br>
                         <h4>Tamanho:</h4> <span>600ml</span>
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                         <img src="./assets/images/vinho_tinto.png" alt=""/>
                         <h3>Vinho Tinto Chateau Garbin</h3>
                         <h4>Preço:</h4> <span>R$79,00</span>
                         <br><br>
                         <h4>Tamanho:</h4> <span>600ml</span>
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                         <img src="./assets/images/coca_cola.jpg" alt=""/>
                         <h3>Coca-cola lata</h3>
                         <h4>Preço:</h4> <span>R$5,00</span>
                         <br><br>
                         <h4>Tamanho:</h4> <span>350ml</span>
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                         <img src="./assets/images/fanta.jpg" alt=""/>
                         <h3>Fanta lata</h3>
                         <h4>Preço:</h4> <span>R$5,00</span>
@@ -116,22 +130,22 @@
                     </div>
                 </div>
                 <div id="porcoes">
-                    <h2>Porções</h2>
-                    <div class="card">
+                    <h2 class="rotateScroll">Porções</h2>
+                    <div class="card toDownScroll">
                         <img src="./assets/images/fraldinha.png" alt=""/>
                         <h3>Fraldinha</h3>
                         <h4>Preço:</h4> <span>R$130,00</span>
                         <br><br>
                         <h4>Tamanho:</h4> <span>Inteira</span>
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                         <img src="./assets/images/carne_de_sol_com_mandioca.png" alt=""/>
                         <h3>Carne de Sol com Mandioca</h3>
                         <h4>Preço:</h4> <span>R$39,00</span>
                         <br><br>
                         <h4>Tamanho:</h4> <span>Meia</span>
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                         <img src="./assets/images/cupim.png" alt=""/>
                         <h3>Cupim com Batata Frita</h3>
                         <h4>Preço:</h4> <span>R$110,00</span>
@@ -140,8 +154,8 @@
                     </div>
                 </div>
                 <div id="hamburguers">
-                    <h2>Hamburguers</h2>
-                    <div class="card">
+                    <h2 class="rotateScroll">Hamburguers</h2>
+                    <div class="card toDownScroll">
                         <img src="./assets/images/costela.png" alt=""/>
                         <h3>Burguer Costela</h3>
                         <h4>Preço:</h4> <span>R$39,00</span>
@@ -153,7 +167,7 @@
                             molho da casa
                         </span>
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                         <img src="./assets/images/bacon.png" alt=""/>
                         <h3>Burguer Bacon</h3>
                         <h4>Preço:</h4> <span>R$29,00</span>
@@ -164,7 +178,7 @@
                             tomate, mussarela, ovo, molho da casa
                         </span>
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                     <img src="./assets/images/angus.png" alt=""/>
                     <h3>Burguer Angus</h3>
                     <h4>Preço:</h4> <span>R$36,00</span>
@@ -177,22 +191,22 @@
                     </div>
                 </div>
                 <div id="massas">
-                    <h2>Massas</h2>
-                    <div class="card">
+                    <h2 class="rotateScroll">Massas</h2>
+                    <div class="card toDownScroll">
                         <img src="./assets/images/espaguetti_bolonhesa.jpeg" alt=""/>
                         <h3>Espaguetti à Bolonhesa</h3>
                         <h4>Preço:</h4> <span>R$18,00</span>
                         <br><br>
                         <h4>Tamanho:</h4> <span>Individual</span>
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                         <img src="./assets/images/espaguetti_branco.png" alt=""/>
                         <h3>Espaguetti ao Molho Branco</h3>
                         <h4>Preço:</h4> <span>R$15,00</span>
                         <br><br>
                         <h4>Tamanho:</h4> <span>Individual</span>
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                         <img src="./assets/images/espaguetti_branco.png" alt=""/>
                         <h3>Espaguetti ao Sugo</h3>
                         <h4>Preço:</h4> <span>R$16,00</span>
@@ -201,22 +215,22 @@
                     </div>
                 </div>
                 <div id="sobremesas">
-                    <h2>Sobremesas</h2>
-                    <div class="card">
+                    <h2 class="rotateScroll">Sobremesas</h2>
+                    <div class="card toDownScroll">
                         <img src="./assets/images/pudim.png" alt=""/>
                         <h3>Pudim de Leite Condensado</h3>
                         <h4>Preço:</h4> <span>R$8,00</span>
                         <br><br>
                         <h4>Tamanho:</h4> <span>100g</span>
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                         <img src="./assets/images/brown.png" alt=""/>
                         <h3>Brownie de Chocolate</h3>
                         <h4>Preço:</h4> <span>R$9,00</span>
                         <br><br>
                         <h4>Tamanho:</h4> <span>100g</span>
                     </div>
-                    <div class="card">
+                    <div class="card toDownScroll">
                         <img src="./assets/images/mousse.png" alt=""/>
                         <h3>Mousse de Limão</h3>
                         <h4>Preço:</h4> <span>R$11,00</span>
@@ -228,11 +242,11 @@
         </section>
         <section id="sobre">
             <div class="content">
-                <h2>Sobre Nós</h2>
-                <div class="left">
+                <h2 class="rotateScroll">Sobre Nós</h2>
+                <div class="left rotateScroll">
                     <img src="./assets/images/logo_big_grill.png" alt="" />
                 </div>
-                <div class="right">
+                <div class="right rotateScroll">
                     <p>
                         Atuamos no ramo de alimentação oferencendo à nosso clientes, 
                         a qualidade e o tradicional tempero de uma comida caseira para 
@@ -246,31 +260,31 @@
         </section>
         <section id="espaco">
             <div class="content">
-                <h2>Nosso Espaço</h2>
-                <div class="left">
+                <h2 class="rotateScroll">Nosso Espaço</h2>
+                <div class="left toRightScroll">
                     O restaurante Big Grill é tradição na região. Com 15 anos 
                     de funcionamento, o Big Grill dispõe de ampla e completa 
                     infra-estrutura, incluindo: espaço coberto para 300 pessoas, 
                     churrasqueira, cozinha completa, banheiros amplos, som 
                     ambiente, playground e uma completa equipe de profissionais.
                 </div>
-                <div class="right">
+                <div class="right rotateScroll">
                     <img src="./assets/images/big_grill_espaco.jpg" alt=""/>
                 </div>
             </div>
         </section>
         <section id="contato">
             <div class="content">
-                <h2>Contato</h2>
-                <div class="left">
+                <h2 class="rotateScroll">Contato</h2>
+                <div class="left toRightScroll">
                     Utilize o formulário para entrar em contato conosco.
                     <h3>Localização:</h3>
                     <a href="https://goo.gl/maps/DSg7cFcHD4PHjBJK7" target="_blank">
-                        <img src="./assets/images/mapa.png" alt="" />
+                        <img class="animate__animated" src="./assets/images/mapa.png" alt="" />
                     </a>
                     <span>Av. Afonso Pena 2222, Funcionários, Belo Horizonte, MG.</span>
                 </div>
-                <div class="right">
+                <div class="right rotateScroll">
                     <form action="#">
                         <fieldset>
                             <legend>Contato</legend>
