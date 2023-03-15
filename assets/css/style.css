@@ -215,10 +215,10 @@ section {
 .card img {
     width: 40%;
     margin-right: 1rem;
-    padding: 0 10px 10px 0;
+    padding: 0 10px 70px 0;
     float: left;
-    border-right: 2px solid var(--secondaryColor);
-    border-bottom: 2px solid var(--secondaryColor);
+    border-right: 3px solid var(--secondaryColor);
+    border-bottom: 1px solid var(--secondaryColor);
 }
 
 .card h3 {

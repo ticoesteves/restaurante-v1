@@ -12,13 +12,6 @@ sr.reveal(".toDownScroll", {
     delay: 300, 
 });
 
-sr.reveal(".toLeftScroll", {
-    origin: "right", 
-    distance: "200px", 
-    duration: 2000, 
-    delay: 300, 
-});
-
 sr.reveal(".toRightScroll", {
     origin: "left", 
     distance: "200px", 
@@ -50,15 +43,18 @@ function verify(e){
     var submit = false;
 
     if(nameForm == ""){
-        alert("Digite seu nome...");
+        alert("Digite seu nome.");
     }else if(emailForm == ""){
-        alert("Digite seu e-mail...");
+        alert("Digite seu e-mail.");
     }else if(emailForm.indexOf("@") == -1 || emailForm.indexOf(".") == -1){
         alert("Digite um e-mail válido.");
     }else if(messageForm == ""){
         alert("Digite sua mensagem.");
     }else{
-        alert("Mensagem enviada com sucesso!");
+        alert(`Olá ` + nameForm + `!
+		\nEste é um site de apresentação.
+		\nQuer o seu? Entre em contato:
+		\nticoestevescontato@gmail.com`);
         submit = true;
     }
     if(submit === false){
